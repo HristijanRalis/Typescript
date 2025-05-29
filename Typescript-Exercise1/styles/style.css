@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+      90deg,
+      rgb(78, 165, 180) 14%,
+      rgb(87, 135, 199) 49%,
+      rgba(83, 237, 196, 1) 97%
+    )
+    no-repeat;
+}
+
+#albums,
+#comments {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.album-item,
+.comment-item {
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Show & Hide*/
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
